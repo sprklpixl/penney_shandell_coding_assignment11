@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Assignment Instructions 
+# Make sure you're in the directory where you want to create the image.
+
+run:
+docker image build -t penney_shandell_coding_assignment11-test:latest .
+
+# the above code will create an image in the current directory
+
+run:
+docker run -dp 7775:3000 --name assignment11-container penney_shandell_coding_assignment11-test:latest
+
+# the above code will run the container in the background, freeing up the terminal for further use. It also changes the port and specifies the container name. Lastly, the image specified in the first command is pulled into the container
